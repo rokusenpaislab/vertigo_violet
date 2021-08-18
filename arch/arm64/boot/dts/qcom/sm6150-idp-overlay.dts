@@ -112,6 +112,7 @@
 };
 
 &usb0{
+	qcom,pm-qos-latency = <67>; /* CPU6-WFI-LVL latency +1 */
 	dwc3@a600000 {
 		usb-phy = <&qusb_phy0>, <&usb_nop_phy>;
 		snps,dis_u2_susphy_quirk;
@@ -125,6 +126,7 @@
 };
 
 &usb1{
+	qcom,pm-qos-latency = <67>; /* CPU6-WFI-LVL latency +1 */
 	dwc3@a800000 {
 		snps,dis_u2_susphy_quirk;
 		snps,dis_enblslpm_quirk;
